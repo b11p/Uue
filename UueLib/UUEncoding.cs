@@ -2,7 +2,7 @@
 
 namespace UueLib
 {
-    public class Class1
+    public class UUEncoding
     {
         public static string ToUUEncodingString(byte[] inData, int offset, int length, bool insertLineBreaks, int lineBreakPosition = 80)
         {

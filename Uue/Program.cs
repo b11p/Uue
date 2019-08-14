@@ -11,7 +11,7 @@ namespace Uue
             Console.WriteLine("file path");
             string path = Console.ReadLine().Trim('"');
             byte[] data = File.ReadAllBytes(path);
-            string encode = Class1.ToUUEncodingString(data, 0, data.Length, true, 80);
+            string encode = UUEncoding.ToUUEncodingString(data, 0, data.Length, true, 80);
             File.WriteAllText(path + ".uue.txt", encode);
         }
 

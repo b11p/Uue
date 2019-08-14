@@ -9,7 +9,7 @@ namespace XUnitTestProject1
         [Fact]
         public void Test1()
         {
-            var emptyEncoding = Class1.ToUUEncodingString(new byte[0], 0, 0, false);
+            var emptyEncoding = UUEncoding.ToUUEncodingString(new byte[0], 0, 0, false);
             Assert.Equal(string.Empty, emptyEncoding);
         }
     }
